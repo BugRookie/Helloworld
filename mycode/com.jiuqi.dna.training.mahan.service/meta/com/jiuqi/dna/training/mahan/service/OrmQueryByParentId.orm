@@ -1,0 +1,12 @@
+define orm OrmQueryByParentId(@id guid not null)
+	mapping com.jiuqi.dna.training.mahan.Impl.DeptImpl
+begin
+	select 
+		t."DEPTMANAGER" as "deptManager",
+		t."DEPTNAME" as "deptName",
+		t."DEPTPARENTID" as "deptParentId",
+		t."DEPTREMARK" as "deptRemark",
+		t."RECID" as "recid"
+	from DeptStorage as t
+	where t.DEPTPARENTID = @id
+end

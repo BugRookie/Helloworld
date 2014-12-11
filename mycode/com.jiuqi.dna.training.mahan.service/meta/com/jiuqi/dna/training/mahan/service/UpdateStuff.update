@@ -1,0 +1,6 @@
+define update UpdateStuff(@recid guid not null,@name string,@age int,@sex string,@stuffdate date,@stuffremark string,@deptid guid,@stufforder int)
+begin
+	update "Stuff" as t
+		set STUFFNAME = @name,STUFFAGE=@age,STUFFSEX=@sex,STUFFDATE=@stuffdate,STUFFREMARK=@stuffremark,DEPTID=@deptid,STUFFORDER=@stufforder
+		where t.RECID = @recid
+end

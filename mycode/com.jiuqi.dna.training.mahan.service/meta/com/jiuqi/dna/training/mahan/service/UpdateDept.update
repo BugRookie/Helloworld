@@ -1,0 +1,6 @@
+define update UpdateDept(@recid guid,@deptname string,@deptcreatedate date,@deptparentid guid, @deptremark string, @deptorder int)
+begin
+	update "DeptStorage" as t
+		set DEPTNAME = @deptname, DEPTCREATEDATE = @deptcreatedate, DEPTPARENTID=@deptparentid, DEPTREMARK=@deptremark, DEPTORDER= @deptorder
+		where t.RECID = @recid
+end

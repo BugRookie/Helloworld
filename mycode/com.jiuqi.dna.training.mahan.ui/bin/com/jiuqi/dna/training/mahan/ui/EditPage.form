@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	引入基础命名空间
+	"http://www.jiuqi.com.cn/UI/Form"
+ -->
+<Form xmlns="http://www.jiuqi.com.cn/UI/Form" version="1.0">
+	<!-- 界面控件 只能为 Control Composite 名空间中元素 -->
+	<Controls layout="Grid[]" width="476" height="400">
+		<Composite id="cmp_u" layoutData="Grid[width:476,height:340,align:fill,grab:true]" layout="Grid[columns:2]">
+			<Label id="lbl_DeptName" layoutData="Grid[indent:50,vindent:30]">部门名称：</Label>
+			<Text id="txt_DeptName" layoutData="Grid[vindent:30]"/>
+			<Label id="lbl_DeptDate" layoutData="Grid[indent:50]">创建日期：</Label>
+			<DatePicker id="dap_deptDate" text="" layoutData="Grid[]"/>
+			<Label id="lbl_UpDept" layoutData="Grid[indent:50]">上级部门：</Label>
+			<ComboPanel id="cop_UpDept" text="" layoutData="Grid[]">
+				<Content/>
+			</ComboPanel>
+			<Label id="lbl_Remark" layoutData="Grid[indent:50,valign:top]">备注：</Label>
+			<Text id="txt_Remark" layoutData="Grid[]" style="MULTI"/>
+		</Composite>
+		<Composite id="cmp_2" layoutData="Grid[align:fill,grab:true,valign:fill,vgrab:true,width:476,height:60]" layout="Grid[]">
+			<Composite id="cmp_1" layoutData="Grid[width:191,height:53,align:right,grab:true]">
+				<Button id="btn_Cancel" style="" x="112" y="9" width="54" height="23" onClick="true">取消</Button>
+				<Button id="btn_Save" onAction="true" style="" x="30" y="9" width="54" height="23">保存</Button>
+			</Composite>
+		</Composite>
+	</Controls>
+	<!-- 弹出菜单（控件的右键菜单和ToolBar的下拉菜单都用到） -->
+	<Menus/>
+</Form>

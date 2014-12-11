@@ -1,0 +1,6 @@
+define query QueryDeptAll()
+begin
+	select t.RECID as recid,t.DEPTNAME as deptname,t.DEPTCREATEDATE as deptcreatedate,
+	t.DEPTPARENTID as deptparentid,t.DEPTREMARK as deptremark,t.DEPTORDER as deptorder
+	from "DeptStorage" as "t"
+end

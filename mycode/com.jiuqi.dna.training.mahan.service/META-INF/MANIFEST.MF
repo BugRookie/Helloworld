@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Service
+Bundle-SymbolicName: com.jiuqi.dna.training.mahan.service
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: JIUQI
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: com.jiuqi.dna.core;bundle-version="3.6.0",
+ com.jiuqi.dna.training.mahan.intf;bundle-version="1.0.0"
+Import-Package: com.jiuqi.dna.core;version="3.0.1",
+ com.jiuqi.dna.core.service,
+ com.jiuqi.dna.training.mahan.task

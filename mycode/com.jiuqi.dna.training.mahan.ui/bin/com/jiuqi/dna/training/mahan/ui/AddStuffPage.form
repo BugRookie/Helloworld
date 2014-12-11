@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	"http://www.jiuqi.com.cn/UI/Form"
+ -->
+<Form xmlns="http://www.jiuqi.com.cn/UI/Form" version="1.0">
+	<Controls title="Root Composite" layout="Grid[]">
+		<Composite id="cmp_1" layoutData="Grid[align:fill,grab:true,width:550,height:322]" layout="Grid[columns:2]">
+			<Label id="lbl_name" layoutData="Grid[width:40,height:22,indent:50,vindent:30]">姓名：</Label>
+			<Text id="txt_name" layoutData="Grid[vindent:30]"/>
+			<Label id="lbl_staffAge" layoutData="Grid[indent:50,width:40,height:20]">年龄：</Label>
+			<Spinner id="spr_age" maximum="100" minimum="0" layoutData="Grid[width:97,height:21]"/>
+			<Label id="lbl_sex" layoutData="Grid[indent:50,width:40,height:20]">性别：</Label>
+			<ComboList2 id="cbl_sex" text="" layoutData="Grid[width:139,height:21]"/>
+			<Label id="lbl_date" layoutData="Grid[indent:50,width:60,height:20]">入职日期：</Label>
+			<DatePicker id="dap_date" text="" layoutData="Grid[width:140,height:21]"/>
+			<Label id="lbl_deptId" layoutData="Grid[indent:50,width:62,height:20]">所属部门：</Label>
+			<ComboPanel id="cop_dept" text="" layoutData="Grid[width:140,height:21]">
+				<Content/>
+			</ComboPanel>
+			<Label id="lbl_remark" layoutData="Grid[indent:50,width:43,height:20,valign:top]">备注：</Label>
+			<Text id="txt_remark" layoutData="Grid[width:200,height:110]"/>
+		</Composite>
+		<Composite id="cmp_2" layoutData="Grid[align:fill,valign:fill,grab:true,vgrab:true]" layout="Grid[columns:1]">
+			<Composite id="cmp_3" layoutData="Grid[align:right,grab:true,width:205,height:64]">
+				<Button x="79" y="23" width="50" height="27" id="btn_add" onClick="true">保存</Button>
+				<Button x="139" y="23" width="57" height="27" id="btn_cancel" onClick="true">取消</Button>
+				<Button x="0" y="23" width="70" height="27" id="btn_addSave" onClick="true">保存并新增</Button>
+			</Composite>
+		</Composite>
+	</Controls>
+	<Menus/>
+</Form>

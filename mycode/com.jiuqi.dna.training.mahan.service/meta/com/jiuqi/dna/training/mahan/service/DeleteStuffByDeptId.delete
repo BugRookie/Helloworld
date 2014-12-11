@@ -1,0 +1,5 @@
+define delete DeleteStuffByDeptId(@recid guid not null)
+begin
+	delete from "Stuff" as t
+	where t.DEPTID =  @recid
+end

@@ -1,0 +1,5 @@
+define delete DeleteDept(@recid guid not null)
+begin
+	delete from "DeptStorage" as t
+	where t.RECID = @recid
+end

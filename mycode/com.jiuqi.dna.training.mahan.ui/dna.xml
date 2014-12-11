@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dna>
+	<publish>
+		<services>
+			<!-- service space="dna/core" class="com.jiuqi.dna.core.XXService" -->
+		</services>
+		<orms>
+			<!-- orm space="dna/core" class="com.jiuqi.dna.core.XXORM" -->
+		</orms>
+		<commands>
+			<!-- command space="dna/core" class="com.jiuqi.dna.core.XXCommand" -->
+		</commands>
+		<querys>
+			<!-- query space="dna/core" class="com.jiuqi.dna.core.XXQuery" -->
+		</querys>
+		<tables>
+			<!--table space="dna/core" class="com.jiuqi.dna.core.impl.TD_BundleBin" /-->
+		</tables>
+		<ui-entrys>
+			<!--uientry class="com.jiuqi.dna.bap.workflowmanager.define.ui.DemoApplicationUIEntry" name="workflowdefine">
+				</uientry-->
+			<uientry class="com.jiuqi.dna.training.mahan.entry.HelloEntry" name="hello"/>
+			<uientry class="com.jiuqi.dna.training.mahan.codepage.CalcPage" name="calc"/>
+		</ui-entrys>
+		<pages>
+			<!--page space="mydemo" name="testtemplate" class="com.jiuqi.dna.ui.template.launch.TemplatePage" /-->
+			<page space="dna/dna" name="HelloDNA" class="com.jiuqi.dna.training.mahan.ui.HelloDNA"/>
+			<page space="dna/dna" name="DefaultPage" class="com.jiuqi.dna.training.mahan.ui.DefaultPage"/>
+			<page space="dna/dna" name="EditPage" class="com.jiuqi.dna.training.mahan.ui.EditPage"/>
+			<page space="dna/dna" name="AddStuffPage" class="com.jiuqi.dna.training.mahan.ui.AddStuffPage"/>
+		</pages>
+		<ui-stylesheets>
+			<!-- stylesheet name="stylesheet" title="stylesheet" path="com/jiuqi/dna/ui/demo/stylesheet.css" -->
+		</ui-stylesheets>
+		<portlets>
+			<!-- portlet name="portlet" class="com.jiuqi.dna.ui.XXPortlet" -->
+		</portlets>
+		<templates/>
+	</publish>
+	<servlets>
+		<servlet space="dna/dna" path="/hello" class="com.jiuqi.dna.ui.launch.http.SystemEntryServlet"/>
+	</servlets>
+</dna>

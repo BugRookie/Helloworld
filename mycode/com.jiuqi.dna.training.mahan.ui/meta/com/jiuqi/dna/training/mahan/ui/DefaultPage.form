@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	"http://www.jiuqi.com.cn/UI/Form"
+ -->
+<Form xmlns="http://www.jiuqi.com.cn/UI/Form" version="1.0">
+	<Controls title="Root Composite" layout="Grid[]">
+		<Composite id="cmp_1" layoutData="Grid[width:550,height:39,align:fill,grab:true]" layout="Fill[]">
+			<ToolBar id="tbr_1" x="0" y="0" width="550" height="55" style="RIGHT">
+				<Item id="tbi_Add" text="新增" onAction="true" style="DROP_DOWN"/>
+				<Item id="tbi_Update" text="修改" onAction="true"/>
+				<Item id="tbi_Delete" text="删除" onAction="true"/>
+				<Item id="tbi_Up" text="上移" onAction="true"/>
+				<Item id="tbi_Down" text="下移" onAction="true"/>
+				<Item id="tbi_Close" text="关闭" onAction="true"/>
+			</ToolBar>
+		</Composite>
+		<Composite id="cmp_2" layoutData="Grid[align:fill,valign:fill,grab:true,vgrab:true]" layout="Fill[]">
+			<SashForm id="saf_1" weights="66:479">
+				<First layout="Grid[columns:1]">
+					<Composite id="cmp_3" layoutData="Grid[align:fill,grab:true,valign:fill,vgrab:true]" layout="Fill[]"/>
+				</First>
+				<Second layout="Grid[]">
+					<Composite id="cmp_select" layoutData="Grid[width:479,height:65,align:fill,grab:true]" layout="Grid[columns:2]">
+						<Label id="lbl_select_name" style="" layoutData="Grid[width:76,height:14,indent:50,vindent:20]">员工姓名：</Label>
+						<Composite id="cmp_search" layoutData="Grid[width:221,height:24,vindent:22]" layout="Grid[]"/>
+					</Composite>
+					<Composite id="cmp_show" layoutData="Grid[width:479,height:286,align:fill,valign:fill,grab:true,vgrab:true]" layout="Grid[]">
+						<Composite id="cmp_table" layoutData="Grid[width:477,height:215,align:fill,grab:true]" layout="Grid[]"/>
+						<Composite id="cmp_paginate" layoutData="Grid[width:475,height:64,align:fill,valign:fill,grab:true,vgrab:true]" layout="Grid[]"/>
+					</Composite>
+				</Second>
+			</SashForm>
+		</Composite>
+	</Controls>
+	<Menus/>
+</Form>

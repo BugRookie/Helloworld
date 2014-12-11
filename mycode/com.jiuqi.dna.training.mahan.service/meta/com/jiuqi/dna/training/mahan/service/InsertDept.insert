@@ -1,0 +1,5 @@
+define insert InsertDept(@recid guid,@deptname string,@deptcreatedate date,@parentid guid,@deptremark string)
+begin
+	insert into "DeptStorage" (RECID,DEPTNAME,DEPTCREATEDATE,DEPTPARENTID,DEPTREMARK)
+		values(@recid,@deptname,@deptcreatedate,@parentid,@deptremark)
+end

@@ -1,0 +1,8 @@
+define query QueryStuffByName(@name string not null)
+begin
+	select t.RECID as recid,t.STUFFNAME as stuffname,t.STUFFAGE as stuffage,
+	t.STUFFSEX as stuffsex,t.STUFFDATE as stuffdate,t.DEPTID as deptid,t.STUFFREMARK as remark,t.STUFFORDER as stufforder
+	from "Stuff" as "t"
+	where t.STUFFNAME = @name
+	order by t.STUFFORDER DESC
+end

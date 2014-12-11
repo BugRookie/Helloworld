@@ -1,0 +1,12 @@
+define orm OrmStuff(@id guid not null)
+	mapping com.jiuqi.dna.training.mahan.Impl.StuffImpl
+begin
+	select 
+		t."DEPTID" as "deptId",
+		t."RECID" as "recid",
+		t."STUFFNAME" as "stuffName",
+		t."STUFFREMARK" as "stuffRemark",
+		t."STUFFSEX" as "stuffSex"
+	from Stuff as t
+	where t.RECID = @id
+end

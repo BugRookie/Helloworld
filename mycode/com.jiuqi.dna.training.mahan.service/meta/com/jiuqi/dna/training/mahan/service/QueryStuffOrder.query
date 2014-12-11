@@ -1,0 +1,5 @@
+define query QueryStuffOrder()
+begin
+	select max(t.STUFFORDER) as maxorder
+	from "Stuff" as "t"
+end

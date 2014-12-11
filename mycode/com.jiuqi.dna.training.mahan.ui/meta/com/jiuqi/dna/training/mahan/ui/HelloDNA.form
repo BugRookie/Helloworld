@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	"http://www.jiuqi.com.cn/UI/Form"
+ -->
+<Form xmlns="http://www.jiuqi.com.cn/UI/Form" version="1.0">
+	<Controls title="Root Composite">
+		<Button x="115" y="163" width="75" height="23" id="btn_1">HelloDNA工程</Button>
+	</Controls>
+	<Menus/>
+</Form>

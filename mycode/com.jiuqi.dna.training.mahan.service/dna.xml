@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dna>
+	<publish>
+		<services>
+			<!-- service space="dna/core" class="com.jiuqi.dna.core.XXService" -->
+			<service space="dna/dna" class="com.jiuqi.dna.training.mahan.service.DeptService" ></service>
+			<service space="dna/dna" class="com.jiuqi.dna.training.mahan.service.StuffService" ></service>
+		</services>
+		
+		<orms>
+			<!-- orm space="dna/core" class="com.jiuqi.dna.core.XXORM" -->
+			<orm space="dna/dna" class="com.jiuqi.dna.training.mahan.service.OrmDept" ></orm>
+			<orm space="dna/dna" class="com.jiuqi.dna.training.mahan.service.OrmQueryByParentId" ></orm>
+			<orm space="dna/dna" class="com.jiuqi.dna.training.mahan.service.OrmQueryByDeptName" ></orm>
+		</orms>
+		
+		<commands>
+			<!-- command space="dna/core" class="com.jiuqi.dna.core.XXCommand" -->
+			<command space="dna/dna" class="com.jiuqi.dna.training.mahan.service.UpdateDept"></command>
+			<command space="dna/dna" class="com.jiuqi.dna.training.mahan.service.InsertDept"></command>
+			<command space="dna/dna" class="com.jiuqi.dna.training.mahan.service.DeleteDept"></command>
+			<command space="dna/dna" class="com.jiuqi.dna.training.mahan.service.UpdateStuff"></command>
+			<command space="dna/dna" class="com.jiuqi.dna.training.mahan.service.InsertStuff"></command>
+			<command space="dna/dna" class="com.jiuqi.dna.training.mahan.service.DeleteStuff"></command>
+			<command space="dna/dna" class="com.jiuqi.dna.training.mahan.service.DeleteStuffByDeptId"></command>
+		</commands>
+		
+		<querys>
+			<!-- query space="dna/core" class="com.jiuqi.dna.core.XXQuery" -->
+			<query space="dna/dna" class="com.jiuqi.dna.training.mahan.service.QueryDept" />
+			<query space="dna/dna" class="com.jiuqi.dna.training.mahan.service.QueryDeptByParentId" />QueryDeptAll
+			<query space="dna/dna" class="com.jiuqi.dna.training.mahan.service.QueryDeptByName" />
+			<query space="dna/dna" class="com.jiuqi.dna.training.mahan.service.QueryDeptAll" />
+			<query space="dna/dna" class="com.jiuqi.dna.training.mahan.service.QueryDeptOrder" />
+			<query space="dna/dna" class="com.jiuqi.dna.training.mahan.service.QueryStuff" />
+			<query space="dna/dna" class="com.jiuqi.dna.training.mahan.service.QueryStuffOrder" />
+			<query space="dna/dna" class="com.jiuqi.dna.training.mahan.service.QueryStuffByDeptId" />
+			<query space="dna/dna" class="com.jiuqi.dna.training.mahan.service.QueryStuffByName" />
+			<query space="dna/dna" class="com.jiuqi.dna.training.mahan.service.QueryStuffByNameAndDeptId" />
+		</querys>
+		
+		<tables>
+			<!--table space="dna/core" class="com.jiuqi.dna.core.impl.TD_BundleBin" /-->
+		</tables>
+		
+		<ui-entrys>
+			<!--uientry class="com.jiuqi.dna.bap.workflowmanager.define.ui.DemoApplicationUIEntry" name="workflowdefine">
+				</uientry-->
+		</ui-entrys>
+		
+		<pages>
+			<!--page space="mydemo" name="testtemplate" class="com.jiuqi.dna.ui.template.launch.TemplatePage" /-->
+		</pages>
+		
+		<ui-stylesheets>
+			<!-- stylesheet name="stylesheet" title="stylesheet" path="com/jiuqi/dna/ui/demo/stylesheet.css" -->
+		</ui-stylesheets>
+		
+		<portlets>
+			<!-- portlet name="portlet" class="com.jiuqi.dna.ui.XXPortlet" -->
+		</portlets>
+	</publish>
+</dna>

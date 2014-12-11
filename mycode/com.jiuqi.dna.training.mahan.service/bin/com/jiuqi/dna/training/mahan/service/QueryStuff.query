@@ -1,0 +1,7 @@
+define query QueryStuff()
+begin
+	select t.RECID as recid,t.STUFFNAME as stuffname,t.STUFFAGE as stuffage,
+	t.STUFFSEX as stuffsex,t.STUFFDATE as stuffdate,t.DEPTID as deptid,t.STUFFREMARK as remark,t.STUFFORDER as stufforder
+	from "Stuff" as "t"
+	order by t.STUFFORDER DESC
+end

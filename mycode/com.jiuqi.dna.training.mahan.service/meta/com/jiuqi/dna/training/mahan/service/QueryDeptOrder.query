@@ -1,0 +1,5 @@
+define query QueryDeptOrder()
+begin
+	select max(t.DEPTORDER) as maxorder
+	from "DeptStorage" as "t"
+end

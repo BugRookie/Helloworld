@@ -1,0 +1,5 @@
+define insert InsertStuff(@recid guid not null,@name string,@age int,@sex string,@stuffdate date,@stuffremark string,@deptid guid,@stufforder int)
+begin
+	insert into "Stuff" (RECID,STUFFNAME,STUFFAGE,STUFFSEX,STUFFDATE,STUFFREMARK,DEPTID,STUFFORDER)
+		values(@recid,@name,@age,@sex,@stuffdate,@stuffremark,@deptid,@stufforder)
+end

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Intf
+Bundle-SymbolicName: com.jiuqi.dna.training.mahan.intf
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: JIUQI
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: com.jiuqi.dna.training.mahan.Impl,
+ com.jiuqi.dna.training.mahan.facade,
+ com.jiuqi.dna.training.mahan.task
+Require-Bundle: com.jiuqi.dna.core;bundle-version="3.6.0"

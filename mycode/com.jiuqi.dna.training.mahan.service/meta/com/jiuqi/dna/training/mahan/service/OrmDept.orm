@@ -1,0 +1,12 @@
+define orm OrmDept()
+	mapping com.jiuqi.dna.training.mahan.Impl.DeptImpl
+begin
+	select 
+		t."DEPTMANAGER" as "deptManager",
+		t."DEPTNAME" as "deptName",
+		t."DEPTPARENTID" as "deptParentId",
+		t."DEPTREMARK" as "deptRemark",
+		t."RECID" as "recid",
+		t."DEPTCREATEDATE" as "deptCreateDate"
+	from DeptStorage as t
+end
